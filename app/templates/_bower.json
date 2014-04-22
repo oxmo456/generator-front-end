@@ -1,0 +1,20 @@
+{
+    "name": "<%= _.slugify(projectName) %>",
+    "version": "0.0.0",
+    "dependencies": {
+        "angular": "*"
+        <% if(includes.angular_routes){ %>
+            ,"angular-route": "*"
+        <% } %>
+        <% if(includes.angular_animate){ %>
+            ,"angular-animate": "*"
+        <% } %>
+        <% if(includes.bootstrap){ %>
+            ,"bootstrap": "*"
+        <% } %>
+        <% if(includes.jQuery){ %>
+            ,"jquery": "*"
+        <% } %>
+    }
+}
+

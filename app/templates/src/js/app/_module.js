@@ -1,0 +1,1 @@
+angular.module("<%= _.slugify(angularjs.appName) %>", []);

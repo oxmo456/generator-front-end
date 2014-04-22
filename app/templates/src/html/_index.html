@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= _.slugify(projectName) %></title>
+    <% if(includes.bootstrap){ %><link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css"/><% } %>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<div ng-app="<%= _.slugify(angularjs.appName) %>" ng-controller="MainController">
+    <h1>{{helloWorld}}</h1>
+</div>
+
+<% if(includes.jQuery){ %><script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script><% } %>
+<script type="text/javascript" src="components/angular/angular.min.js"></script>
+<% if(includes.angular_routes){ %><script type="text/javascript" src="components/angular-route/angular-route.min.js"></script><% } %>
+<% if(includes.angular_animate){ %><script type="text/javascript" src="components/angular-animate/angular-animate.min.js"></script><% } %>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
